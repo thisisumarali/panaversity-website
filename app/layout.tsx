@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+<link
+  href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+  rel="stylesheet"
+/>;
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>
+          <Header />
+          {children}
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }
