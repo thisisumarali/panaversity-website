@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8 py-8 items-center lg:px-16">
-      <div className="py-12 px-8 lg:px-8 rounded-lg flex flex-col justify-center md:block">
+      <div className="py-12 px-8 lg:px-8 rounded-lg flex flex-col justify-center md:block ">
         <h2 className="text-5xl lg:text-6xl bg-gradient-to-r font-bold from-blue-400 via-green-600 bg-clip-text text-transparent">
           Become A Certified Web 3.0 <br /> And Metaverse Developer
         </h2>
@@ -14,8 +14,10 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="rounded-lg px-8 md:px-12 flex justify-center md:block">
-        <Image src="Team-pana.svg" alt="hero" width={500} height={500} />
+      <div>
+        <div className="rounded-full px-8 md:px-12 flex justify-center items-center md:block lg:bg-gray-200">
+          <Image src="Team-pana.svg" alt="hero" width={500} height={500} />
+        </div>
       </div>
     </div>
   );
