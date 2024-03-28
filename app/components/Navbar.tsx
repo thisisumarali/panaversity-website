@@ -16,19 +16,11 @@ export function NavbarDemo() {
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed top-10 inset-x-0 flex  mx-auto z-50", className)}>
-      <Menu setActive={setActive}>
-        {/* <div>
-          <Link href="/">
-            <Image
-              src="Panverse-black.svg"
-              alt="PanaverseDao"
-              width={117}
-              height={117}
-            />
-          </Link>
-        </div> */}
-        <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>
+    <div className={cn("fixed top-1 inset-x-0 flex mx-auto z-50", className)}>
+      <Menu setActive={setActive} >
+        <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-black">
+         Home
+        </Link>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/aritificial Intelligence">
