@@ -34,10 +34,15 @@ function Navbar({ className }: { className?: string }) {
         scroll && "shadow-sm bg-gray-100 text-white"
       )}
     >
-      <Menu setActive={setActive}>
+      <Menu setActive={setActive} >
+        <div className="justify-start flex">
+          <h2 className="bg-clip-text text-3xl font-bold  text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-100">
+            Panversity
+          </h2>
+        </div>
         <Link
           href="/"
-          className="text-black hover:opacity-[0.9] cursor-pointer"
+          className="text-purple-600 hover:opacity-[0.9] cursor-pointer"
         >
           Home
         </Link>

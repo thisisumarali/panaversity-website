@@ -13,7 +13,7 @@ export function SpotlightPreview() {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:mt-32 ">
         <div className=" p-4 max-w-7xl relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl py-1 font-bold text-center sm:text-left bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-50">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl py-1 font-bold text-center sm:text-left bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-100">
             Panaversity
           </h1>
           <p className="mt-4 mr-3 font-normal text-base text-[#555] max-w-lg text-center sm:text-left mx-auto">
