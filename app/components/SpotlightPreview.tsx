@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function SpotlightPreview() {
   return (
-    <div className="flex items-center justify-center h-screen sm:h-[60vh] content-center bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="flex items-center justify-center h-screen sm:h-[70vh] content-center bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="purple"
