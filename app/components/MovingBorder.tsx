@@ -9,7 +9,7 @@ export function MovingBorderDemo() {
       <Link href="/">
         <Button
           borderRadius="1.75rem"
-          className="bg-black text-slate-100 hover:text-green-100 border-neutral-200 dark:border-slate-800"
+          className="bg-purple-900 text-slate-100 hover:text-green-100 border-neutral-200 dark:border-slate-800"
         >
           Get Started
         </Button>

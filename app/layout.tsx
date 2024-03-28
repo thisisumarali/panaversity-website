@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
 import Footer from "./components/Footer";
 import { NavbarDemo } from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Panaverse | Artifical Intelligence",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-black ${inter.className}`}>
+      <body className={inter.className}>
         <main>
           <NavbarDemo />
           {children}

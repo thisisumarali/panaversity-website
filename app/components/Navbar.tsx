@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/Navbar-menu";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
@@ -15,11 +15,31 @@ export function NavbarDemo() {
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY > 20);
+  };
+
   return (
-    <div className={cn("fixed top-1 inset-x-0 flex mx-auto z-50", className)}>
-      <Menu setActive={setActive} >
-        <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-black">
-         Home
+    <div
+      className={cn(
+        "fixed top-0 inset-x-0 flex mx-auto z-50",
+        className,
+        scroll && "shadow-sm bg-gray-100 text-white"
+      )}
+    >
+      <Menu setActive={setActive}>
+        <Link
+          href="/"
+          className="text-black hover:opacity-[0.9] cursor-pointer"
+        >
+          Home
         </Link>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
@@ -71,3 +91,5 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+
+export default Navbar;
