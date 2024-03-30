@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export function SpotlightPreview() {
   return (
-    <div className="flex items-center justify-center h-screen sm:h-[80vh] content-center bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center h-screen  sm:h-[80vh] content-center bg-white antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="purple"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 p-4  justify-center">
-        <div className="mx-auto relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 p-4  justify-center ">
+        <div className="mx-auto relative z-10 text-center"> {/* Center content */}
           <h1 className="text-4xl md:text-5xl lg:text-[5em] py-1 font-bold text-center sm:text-left bg-clip-text text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-100">
             Panaversity
           </h1>

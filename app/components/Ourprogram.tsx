@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Ourprogram = () => {
     return (
-        <section className="bg-white">
+        <section className="bg-purple-300">
             <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Programs</h2>
@@ -12,7 +12,7 @@ const Ourprogram = () => {
 
                 <div className="mt-8 sm:mt-12">
                     <dl className="grid grid-cols-1 gap-4 md :grid-cols-4 sm:grid-cols-2">
-                        <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
+                        <div className="flex flex-col rounded-lg bg-purple-200 px-4 py-8 text-center">
                             <Link href='/' className="group relative block h-64 sm:h-80 lg:h-96">
                                 <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
@@ -55,7 +55,7 @@ const Ourprogram = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
+                        <div className="flex flex-col rounded-lg bg-purple-200 px-4 py-8 text-center">
                             <Link href='/' className="group relative block h-64 sm:h-80 lg:h-96">
                                 <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
@@ -98,7 +98,7 @@ const Ourprogram = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
+                        <div className="flex flex-col rounded-lg bg-purple-200 px-4 py-8 text-center">
                             <Link href='/' className="group relative block h-64 sm:h-80 lg:h-96">
                                 <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
@@ -141,7 +141,7 @@ const Ourprogram = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className="flex flex-col rounded-lg bg-blue-50 px-4 py-8 text-center">
+                        <div className="flex flex-col rounded-lg bg-purple-200 px-4 py-8 text-center">
                             <Link href='/' className="group relative block h-64 sm:h-80 lg:h-96">
                                 <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
