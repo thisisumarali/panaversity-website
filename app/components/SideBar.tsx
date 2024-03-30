@@ -2,8 +2,8 @@ import React from 'react'
 
 const SideBar = () => {
   return (
-    <div className='h-screen w-[130px] flex flex-col space-x-4 bg-slate-500'>
-        SIDE BAR HELLO
+    <div className='h-screen w-1/5 flex flex-col space-x-4 bg-slate-500 top-24 relative'>
+      SIDE BAR HELLO
     </div>
   )
 }

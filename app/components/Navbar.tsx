@@ -36,7 +36,7 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive} >
         <div className="justify-start flex">
-          <h2 className="bg-clip-text text-3xl font-bold  text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-100">
+          <h2 className="bg-clip-text text-xl md:text-3xl font-bold  text-transparent bg-gradient-to-r from-neutral-900 to-purple-900 bg-opacity-100">
             Panversity
           </h2>
         </div>
