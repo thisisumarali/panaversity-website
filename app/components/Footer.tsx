@@ -201,11 +201,10 @@ const Footer = () => {
             <br />
 
             Created with
-            <a href="#" className="text-gray-700 underline transition hover:text-gray-700/75">Laravel</a>
+            <a href="#" className="text-gray-700 underline transition hover:text-gray-700/75">Panaversity</a>
             and
             <a href="#" className="text-gray-700 underline transition hover:text-gray-700/75"
-            >Laravel Livewire</a
-            >.
+            >Laravel Livewire</a>
           </p>
         </div>
       </div>

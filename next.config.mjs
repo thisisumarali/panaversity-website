@@ -6,6 +6,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.panaverse.co",
         hostname: "assets.aceternity.com",
+        hostname: "images.unsplash.com",
       },
     ],
   },
